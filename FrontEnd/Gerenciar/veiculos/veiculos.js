@@ -61,10 +61,10 @@ function adicionarCarro() {
 }
 
 // Função para voltar à tela inicial
-function voltarTelaInicial() {
-    // Adicione aqui qualquer lógica adicional antes de recarregar a página, se necessário
-    window.location.href = "Gerenciar\Home.html"; // Recarrega a página para limpar os dados da tabela
+function redirecionarParaHome() {
+    // Redirecionar para a tela inicial 
+    window.location.href = "Home.html";
 }
-
+ 
 // Exibir a lista inicial de carros ao carregar a página
 document.addEventListener("DOMContentLoaded", exibirCarros);
