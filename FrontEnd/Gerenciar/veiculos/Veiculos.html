@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina</title>
+    <link rel="stylesheet" href="veiculos.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lista de Carros</h1>
+
+        <table id="carros-tabela">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Cor</th>
+                    <th>Serviço</th>
+                    <th>Data de Conclusão</th>
+                    <th>Funcionário Responsável</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="carros-lista">
+                <!-- Aqui será exibida a lista de carros -->
+            </tbody>
+        </table>
+
+        <button onclick="adicionarCarro()">Adicionar Carro</button>
+        <button onclick="Home()">Voltar à Tela Inicial</button>
+    </div>
+
+    <script src="veiculos.js"></script>
+</body>
+</html>
