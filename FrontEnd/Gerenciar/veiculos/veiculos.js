@@ -61,10 +61,10 @@ function adicionarCarro() {
 }
 
 // Função para voltar à tela inicial
-function redirecionarParaHome() {
-    // Redirecionar para a tela inicial 
-    window.location.href = "Home.html";
+function goback () {
+    window.history.back ();
 }
+
  
 // Exibir a lista inicial de carros ao carregar a página
 document.addEventListener("DOMContentLoaded", exibirCarros);

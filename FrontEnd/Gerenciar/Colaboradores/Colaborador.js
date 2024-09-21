@@ -35,6 +35,7 @@ function adicionarFuncionario() {
 // Exibir a lista inicial de funcionários ao carregar a página
 document.addEventListener("DOMContentLoaded", exibirFuncionarios);
 
+// Botão de Voltar
 function goback() {
-    window.history();
+    window.history.back();
 }

@@ -11,7 +11,7 @@
             "driver": "MySQL",
             "database": "mecanica_db",
             "username": "root",
-            "name": "roor"
+            "name": "root"
         }
     ]
 }
